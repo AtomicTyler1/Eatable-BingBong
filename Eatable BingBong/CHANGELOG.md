@@ -1,3 +1,7 @@
+# v0.1.3 - Prop
+
+- The prop bing bong can now be eaten.
+
 # v0.1.2 - Bling Bong
 
 - You can eat the ancient idol.

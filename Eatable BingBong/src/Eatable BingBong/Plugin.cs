@@ -55,10 +55,10 @@ namespace Eatable_BingBong
 
         private static IEnumerator GiveCrabRoutine(Character character)
         {
-            var longWaitInstruction = new WaitForSeconds(60f);
-            yield return longWaitInstruction;
+            var waitTime= new WaitForSeconds(60f);
+            yield return waitTime;
 
-            var waitInstruction = new WaitForSeconds(1f);
+            var tick = new WaitForSeconds(1f);
 
             for (var i = 1; i < 50; i++)
             {
@@ -74,7 +74,7 @@ namespace Eatable_BingBong
 
                 character.refs.afflictions.AddStatus(CharacterAfflictions.STATUSTYPE.Crab, 0.01f);
 
-                yield return waitInstruction;
+                yield return tick;
             }
         }
     }
@@ -192,7 +192,7 @@ namespace Eatable_BingBong
         [HarmonyPatch(typeof(Item), nameof(Item.Awake))]
         public static void GetBingBong(Item __instance)
         {
-            if (__instance.itemID == 13) BingBong(__instance);
+            if (__instance.itemID == 13 || __instance.itemID == 124) BingBong(__instance);
             if (__instance.itemID == 47) AncientIdol(__instance);
         }
     }
