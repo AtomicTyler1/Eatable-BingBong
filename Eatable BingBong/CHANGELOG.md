@@ -1,3 +1,11 @@
+# v0.1.4 - Fixes and additions
+
+- Fixed for the new game version
+- You gain 60s of speed boost (ANICENT IDOL)
+- You gain 60s of numb (ANICENT IDOL)
+
+- Ghosts and scout master effect on eat (ALL 3)
+
 # v0.1.3 - Prop
 
 - The prop bing bong can now be eaten.
